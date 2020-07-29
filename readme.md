@@ -1,5 +1,6 @@
-# A packer configuration to create a K3S server on an ubuntu base and expose its key file on port 8765 via an nginx docker container
+# KnowledgeHut DevOps Bootcamp Labs
+## A packer config to create a docker Hashicorp Vault server
 
-This is designed to be used in a security group that only allows access to port 8765 from another security group containing only authorised worker nodes (agents in K3S speak).
+Exposes docker on port 8200, and allows ssh access only from the bastion.
 
-To use this file, please set the environtment variables OWNER, AWS_ACCESS_KEY_ID, and AWS_SECRET_ACCESS_KEY
+To use this you'll need to place your credentials in the creds folder. 
